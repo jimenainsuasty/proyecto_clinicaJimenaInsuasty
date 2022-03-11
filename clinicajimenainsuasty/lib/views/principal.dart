@@ -1,5 +1,6 @@
 import 'package:clinicajimenainsuasty/views/citas.dart';
 import 'package:clinicajimenainsuasty/views/datos.dart';
+import 'package:clinicajimenainsuasty/views/imagen.dart';
 import 'package:clinicajimenainsuasty/views/pagos.dart';
 import 'package:clinicajimenainsuasty/views/tratamiento.dart';
 
@@ -60,6 +61,17 @@ class PrincipalState extends State<Principal> {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => Pagos()));
             }),
+
+            ListTile(
+            title: Text('Imagen'),
+            trailing: Icon(Icons.arrow_forward),
+            leading: Icon(Icons.monetization_on),
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Imagen()));
+            }),
+            Divider(),
+            Divider(),
       ],
     );
   }
